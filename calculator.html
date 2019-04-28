@@ -21,6 +21,10 @@ function resultados() {
     texto.innerHTML += "Seno de " + angulorGr + " = " + seno + "<br/>"
     }
 }
+function cuartapot() {
+	var num4 = document.getElementById("n2");
+	num4.value = Math.pow(num4.value, 4);
+}
 </script>
 </head>
 <body>
@@ -30,13 +34,16 @@ function resultados() {
   <p>
     <button onclick="cube()"> x^3 </button>
   </p> 
-  
-     <p> Seno de un angulo :</p>
+  <input type="text" id="n2">
+  <p>
+    <button onclick="cuartapot()"> x^4 </button>
+  </p>  
+  <p> Seno de un angulo :</p>
    <div id="caja">
    </div>
    <form action="#" name="form1">
      <p><input type= "text" name="angulo" /> Valor del angulo en grados(entre 0 y 90) </p>
      <p><input type= "button" onclick="resultados()" value="Resultado" /></p>
-</form>       
+   </form>       
 </body>
 </html>   
